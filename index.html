@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple JS Clock</title>
+    <link href="assets/css/style.css" rel="stylesheet"></link>
+    <link href="assets/css/clock.css" rel="stylesheet"></link>
+    <script defer src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header role="header" class="header">
+      <h2>Simple JS Clock</h2>
+      <a href="#">Git Repo</a>
+    </header>
+
+    <!--Main-->
+    <main role="main">
+      <section class="clock">
+        <div class="center"></div>
+        <div class="hours-hand"></div>
+        <div class="minutes-hand"></div>
+        <div class="seconds-hand"></div>
+        <ul>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>3</span></li>
+          <li><span>4</span></li>
+          <li><span>5</span></li>
+          <li><span>6</span></li>
+          <li><span>7</span></li>
+          <li><span>8</span></li>
+          <li><span>9</span></li>
+          <li><span>10</span></li>
+          <li><span>11</span></li>
+          <li><span>12</span></li>
+        </ul>
+      </section>
+      <section id="date-string"></section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+
+        <ul class="color-palette">
+          <li class="palette-box" onclick="setTheme('#1a4b84')"></li>
+          <li class="palette-box" onclick="setTheme('#991e14')"></li>
+          <li class="palette-box" onclick="setTheme('#fead06')"></li>
+        </ul>
+     
+    </footer>
+  </body>
+</html>
