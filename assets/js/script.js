@@ -22,13 +22,10 @@ function displayClock() {
   secondsHand.style.transform = `rotate(${secondsRotation}deg)`;
 
   // Display formatted date and time
-  const formattedHours =
-    hours === 0 ? "00" : String(24 - hours).padStart(2, "0");
+  const formattedHours = hours === 0 ? "00" : String(hours).padStart(2, "0");
   dateString.innerHTML = `<p>Current date and time: <span>${formattedDate}, ${formattedHours}:${String(
     minutes,
-  ).padStart(2, "0")}:${String(seconds).padStart(2, "0")} ${
-    hours > 12 ? "PM" : "AM"
-  }</span> </p>`;
+  ).padStart(2, "0")}:${String(seconds).padStart(2, "0")} </span> </p>`;
 }
 
 setInterval(displayClock, 1000);
